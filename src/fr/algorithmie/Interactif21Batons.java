@@ -17,12 +17,12 @@ public class Interactif21Batons {
     private final static int choixMax = 3;
     private final static int choixMin = 1;
     public static void main(String[] args) {
+        //Indiquez en paramètre le nombre de batons que vous voulez pour la partie.
         lancerJeu(21);
     }
 
     private static void lancerJeu(int batons){
         System.out.printf("Le jeu des %d batons\n", batons);
-
         Scanner sc = new Scanner(System.in);
 
         do {
