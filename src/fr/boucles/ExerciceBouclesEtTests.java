@@ -36,15 +36,15 @@ public class ExerciceBouclesEtTests {
             }
         }
         
-        //Afficher les index des entiers pairs
-        System.out.println("Index des entiers pairs : ");
+        //Afficher les entiers aux index pairs
+        System.out.println("Entiers aux index pairs : ");
         for (i = 0; i <= array.length-1; i++) {
-        	if (array[i] % 2 == 0) {
-        		System.out.println(i);
+        	if (i % 2 == 0) {
+        		System.out.println(array[i]);
         	}
         }
         
-        //Afficher seulement les entiers pairs
+        //Afficher seulement les entiers impairs
         System.out.println("Entiers impairs : ");
         for (i = 0; i <= array.length-1; i++) {
             if (array[i] % 2 != 0) {
@@ -52,7 +52,8 @@ public class ExerciceBouclesEtTests {
             }
         }
     }
-    
+
+    //Fonction pour inverser les éléments d'un tableau
     public static void inverserTableau(int[] tableauOriginel, int indexTotal) {
         int[] tableauInverse = new int[indexTotal];
         int indexRecup = indexTotal;
