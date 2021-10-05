@@ -1,5 +1,6 @@
 package fr.algorithmie;
 
+import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -40,7 +41,7 @@ public class Interactif21Batons {
                         System.out.println("Vous pouvez prendre jusqu'à 3 batons");
                     }
                 }
-                catch (NumberFormatException e) {
+                catch (InputMismatchException e) {
                     System.out.println("Saisie incorrecte, utilisez la touche 1, 2 ou 3");
                 }
             }
